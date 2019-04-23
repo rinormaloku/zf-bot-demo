@@ -36,7 +36,7 @@ namespace Microsoft.BotBuilderSamples
 
             if (bookingDetails.Destination == null)
             {
-                return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("What is your destination?") }, cancellationToken);
+                return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Where do you want to go?") }, cancellationToken);
             }
             else
             {
